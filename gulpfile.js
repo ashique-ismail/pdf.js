@@ -1154,7 +1154,7 @@ gulp.task("types", function (done) {
     "forceConsistentCasingInFileNames",
     "emitDeclarationOnly",
   ].join(" --");
-  exec(`node_modules/.bin/tsc --${args} src/pdf.js`, done);
+  exec(`npx tsc --${args} src/pdf.js`, done);
 });
 
 function buildLib(defines, dir) {
